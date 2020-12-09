@@ -1,7 +1,13 @@
+#content {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-
 
 .nav {
     width: 100%;
@@ -28,11 +34,15 @@ li {
 }
 
 main.block {
+    position: relative;
+    min-height: 100%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     background-color: lightyellow;
+    flex: 1 1 auto;
 }
+
 IMG.displayed {
     display: block;
     margin-left: auto;
@@ -40,12 +50,17 @@ IMG.displayed {
 }
 
 .main__search {
-
+    display: flex;
+    justify-content: center;
 }
 
-
-.main___submit {
-
+.main__submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+button {
+    margin: 8px;
 }
 
 .footer {
