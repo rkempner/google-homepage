@@ -1,47 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-
-    
+<html>
     <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Google Homepage</title>
-        <link href="styles.css" rel="stylesheet" type="text/css" />
-        <meta name="viewport" contents="width=device-width, initial scale=1.0">
+        <link rel="stylesheet" href="styles.css">
     </head>
-
-
-    <body class="center">
-        <img class="center" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-        <div class="center">
-            <input type="text">
-            <div>
-                <button type="button">Search</button>
-                <button type="button">I'm feeling Lucky</button>
-            </div>
+    <body>
+        <div class="bod__left">
+            <ul>
+                <li>About</li>
+                <li>Store</li>
+            </ul>
+        </div>
+        <div class="bod_right">
+            <ul>
+                <li>Gmail</li>
+                <li>Images</li>
+                <li>Apps</li>
+                <li><button>Sign In</button></li>
+            </ul> 
         </div>
     </body>
 
 
-    <div class="footer">
+    <main>
+        <div class="main__logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="GOOGLE SEARCH">
+        </div>
+        <div class="main__search">
+            <input type="text" name="search">
+        </div>
+        <div class="main__submit">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+    </main>
+
+    <footer class="footer">
         <div>
-        <!--left justified?-->
-            <div>Advertising</div>
-            <div>Business</div>
-            <div>How search works</div>
-        </div>
-        <!--centered-->
-        <div class="center">
-            <div>
-                <img src="https://sustainability.google/static/images/GoogleG-GLeaf_%402x-noloop.gif?cache=e789f51" width="15" height="15">
-                <a class="ITBbvb" href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">
-                Carbon neutral since 2007
-                </a>
+            <ul class="foot__left">
+                <li>Adverstising</li>
+                <li>Business</li>
+                <li>How search works</li>
+            </ul>
+            <!--centered-->
+            <div class="foot__center">
+                <div>
+                    <img src="https://sustainability.google/static/images/GoogleG-GLeaf_%402x-noloop.gif?cache=e789f51" width="15" height="15">
+                    <a class="ITBbvb" href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">
+                    Carbon neutral since 2007
+                    </a>
+                </div>
             </div>
+            <!--right justified-->
+            <ul class="foot__right">
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Settings</li>
+            </ul>
         </div>
-        <!--right justified-->
-        <div class="right">
-            <div>Privacy</div>
-            <div>Terms</div>
-            <div>Settings</div>
-        </div>
-    </div>
+    </footer>
 </html>
