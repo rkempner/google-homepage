@@ -6,60 +6,49 @@
         <title>Google Homepage</title>
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body class="block">
-        <div class="bod__left">
-            <ul class="bod__left">
-                <li>About</li>
-                <li>Store</li>
-            </ul>
-        </div>
-        <div class="bod__right">
+
+    <div id="content">
+        <div class="topNav">
             <ul>
-                <li>Gmail</li>
-                <li>Images</li>
-                <li>Apps</li>
-                <li><button style="background-color: blue; color: white;">Sign In</button></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#store">Store</a></li>
+                <li style="float: right;"><a href="#SignIn"><button style="background-color: blue; color: white;">Sign In</button></a></li>
+                <li style="float: right;"><a href="#Apps">Apps</a></li>
+                <li style="float: right;"><a href="#Images">Images</a></li>
+                <li style="float: right;"><a href="#Gmail">Gmail</a></li>
+                
             </ul> 
-            
         </div>
-    </body>
+    
 
+        <div class="searchBlock">
+            <div>
+                <img class="displayed" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="GOOGLE SEARCH">
+            </div>
+            <div class="main__search">
+                <input type="text" name="search">
+            </div>
+            <div class="main__submit">
+                <button>Google Search</button>
+                <button>I'm Feeling Lucky</button>
+            </div>
+        </div>
 
-    <main class="block" id="content">
-        <div>
-            <img class="displayed" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="GOOGLE SEARCH">
-        </div>
-        <div class="main__search">
-            <input type="text" name="search">
-        </div>
-        <div class="main__submit">
-            <button>Google Search</button>
-            <button>I'm Feeling Lucky</button>
-        </div>
-    </main>
-
-    <footer class="footer" id = "nav">
-        <div class="block">
+        <footer class="botNav">
             <ul class="foot__left">
-                <li>Adverstising</li>
-                <li>Business</li>
-                <li>How search works</li>
-            </ul>
-            <!--centered
-            <div class="foot__center">
-                <div>
-                    <img src="https://sustainability.google/static/images/GoogleG-GLeaf_%402x-noloop.gif?cache=e789f51" width="15" height="15">
-                    <a class="ITBbvb" href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">
-                    Carbon neutral since 2007
+                <li><a href="#Advertising">Advertising</a></li>
+                <li><a href="#Business">Business</a></li>
+                <li><a href="SearchFAQ">How search works</a></li>
+                <li>
+                    <a style="float: left -50%" href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">
+                        <img src="https://sustainability.google/static/images/GoogleG-GLeaf_%402x-noloop.gif?cache=e789f51" width="15" height="15">
+                        Carbon neutral since 2007
                     </a>
-                </div>
-            </div>-->
-            <!--right justified-->
-            <ul class="foot__right">
-                <li>Privacy</li>
-                <li>Terms</li>
-                <li>Settings</li>
+                </li>
+                <li style="float: right;"><a href="#Privacy">Privacy</a></li>
+                <li style="float: right;"><a href="#Terms">Terms</a></li>
+                <li style="float: right;"><a href="#Settings">Settings</a></li>
             </ul>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </html>
